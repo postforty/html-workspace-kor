@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <select name="cars1" onclick="getValue(this)">
+        <option value="">---선택---</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab" disabled>Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi" selected>Audi</option>
+    </select>
+    <script>
+        const getValue = (target) => {
+            console.log(target.value);
+        }
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <select name="cars2" multiple>
+        <option value="">---선택---</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <select name="cars3" multiple>
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+    </select>
+
+    <hr>
+
+    <input list="cities" placeholder="도시를 입력하세요">
+
+    <datalist id="cities">
+        <option value="서울"></option>
+        <option value="부산"></option>
+        <option value="대구"></option>
+        <option value="인천"></option>
+        <option value="광주"></option>
+        <option value="대전"></option>
+        <option value="울산"></option>
+        <option value="양산"></option>
+    </datalist>
+
+</body>
+
+</html>
